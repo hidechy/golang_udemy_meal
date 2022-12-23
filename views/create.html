@@ -1,0 +1,16 @@
+{{define "content"}}
+
+<form role="form" action="/save" method="post">
+
+<div><input type="date" name="meal_date" class="form-control" placeholder="MealDate"></div>
+<div><input type="text" name="meal_kind" class="form-control" placeholder="MealKind"></div>
+<div><input type="text" name="meal_menu" class="form-control" placeholder="MealMenu"></div>
+<div><input type="text" name="meal_place" class="form-control" placeholder="MealPlace"></div>
+<div><input type="text" name="meal_shop_name" class="form-control" placeholder="MealShopName"></div>
+<div><input type="text" name="meal_shop_price" class="form-control" placeholder="MealShopPrice"></div>
+
+<button class="btn btn-lg btn-primary pull-right" type="submit">作成</button>
+
+</form>
+
+{{end}}

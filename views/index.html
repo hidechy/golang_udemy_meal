@@ -1,0 +1,20 @@
+{{define "content"}}
+
+UserName:{{.Name}}
+
+<p>[<a href="/create">Create</a>]</p>
+<hr>
+{{range .Meals}}
+<div>{{.MealDate}}</div>
+<div>{{.MealKind}}</div>
+<div>{{.MealMenu}}</div>
+<div>{{.MealPlace}}</div>
+<div>{{.MealShopName}}</div>
+<div>{{.MealShopPrice}}</div>
+
+<p>[<a href="/edit/{{.ID}}">Edit</a>]</p>
+<p>[<a href="/delete/{{.ID}}">Delete</a>]</p>
+<hr>
+{{end}}
+
+{{end}}

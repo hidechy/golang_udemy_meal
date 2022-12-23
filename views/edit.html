@@ -1,0 +1,25 @@
+{{define "content"}}
+
+<div>{{.MealDate}}</div>
+<div>{{.MealKind}}</div>
+<div>{{.MealMenu}}</div>
+<div>{{.MealPlace}}</div>
+<div>{{.MealShopName}}</div>
+<div>{{.MealShopPrice}}</div>
+
+<form role="form" action="/update/{{.ID}}" method="post">
+
+<div class="form-group">
+
+<div><input type="date" name="meal_date" class="form-control" value="{{.MealDate}}"></div>
+<div><input type="text" name="meal_kind" class="form-control" value="{{.MealKind}}"></div>
+<div><input type="text" name="meal_menu" class="form-control" value="{{.MealMenu}}"></div>
+<div><input type="text" name="meal_place" class="form-control" value="{{.MealPlace}}"></div>
+<div><input type="text" name="meal_shop_name" class="form-control" value="{{.MealShopName}}"></div>
+<div><input type="text" name="meal_shop_price" class="form-control" value="{{.MealShopPrice}}"></div>
+
+<button class="btn btn-lg btn-primary pull-right" type="submit">更新</button>
+
+</form>
+
+{{end}}

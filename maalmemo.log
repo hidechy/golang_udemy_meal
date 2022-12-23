@@ -1,0 +1,217 @@
+2022/12/23 21:49:47 meals.go:66: sql: Scan error on column index 1, name "meal_date": unsupported Scan, storing driver.Value type string into type *time.Time
+2022/12/23 23:06:45 server.go:3197: http: panic serving [::1]:49543: open views/todo_edit.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x10462b4e0, 0x14000094a50})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/controllers.generateHTML({0x104676360?, 0x140000b40e0}, {0x10465b9c0, 0x140000c0480}, {0x14000215790?, 0x3, 0x14000215818?})
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:19 +0xd0
+todo/controllers.edit({0x104676360, 0x140000b40e0}, 0x7?, 0x1041e853c?)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/route_main.go:82 +0x23c
+todo/controllers.parseURL.func1({0x104676360, 0x140000b40e0}, 0x14000236100)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:67 +0xc0
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104676360?, 0x140000b40e0?}, 0x10413e730?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104676360, 0x140000b40e0}, 0x14000236100)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x104676360, 0x140000b40e0}, 0x14000236100)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001374a0, {0x1046765b8, 0x1400011d620})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/23 23:06:45 server.go:3197: http: panic serving [::1]:49544: open views/todo_edit.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x10462b4e0, 0x14000095320})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/controllers.generateHTML({0x104676360?, 0x140000b41c0}, {0x10465b9c0, 0x140000c0a80}, {0x1400013f790?, 0x3, 0x1400013f818?})
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:19 +0xd0
+todo/controllers.edit({0x104676360, 0x140000b41c0}, 0x7?, 0x1041e853c?)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/route_main.go:82 +0x23c
+todo/controllers.parseURL.func1({0x104676360, 0x140000b41c0}, 0x14000182100)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:67 +0xc0
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104676360?, 0x140000b41c0?}, 0x10413e730?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104676360, 0x140000b41c0}, 0x14000182100)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400011d770?}, {0x104676360, 0x140000b41c0}, 0x14000182100)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000137540, {0x1046765b8, 0x1400011d620})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/23 23:06:45 server.go:3197: http: panic serving [::1]:49546: open views/todo_edit.html: no such file or directory
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x10462b4e0, 0x14000095560})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/controllers.generateHTML({0x104676360?, 0x14000276000}, {0x10465b9c0, 0x1400021e600}, {0x14000139790?, 0x3, 0x1400026c818?})
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:19 +0xd0
+todo/controllers.edit({0x104676360, 0x14000276000}, 0x7?, 0x1041e853c?)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/route_main.go:82 +0x23c
+todo/controllers.parseURL.func1({0x104676360, 0x14000276000}, 0x14000236200)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:67 +0xc0
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104676360?, 0x14000276000?}, 0x10413e730?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104676360, 0x14000276000}, 0x14000236200)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000201bf0?}, {0x104676360, 0x14000276000}, 0x14000236200)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400023a140, {0x1046765b8, 0x1400011d620})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/23 23:06:46 server.go:3197: http: panic serving [::1]:49547: open views/todo_edit.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x10462b4e0, 0x1400027e570})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/controllers.generateHTML({0x104676360?, 0x140001921c0}, {0x10465b9c0, 0x14000190e00}, {0x140001ad790?, 0x3, 0x1400005b818?})
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:19 +0xd0
+todo/controllers.edit({0x104676360, 0x140001921c0}, 0x7?, 0x1041e853c?)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/route_main.go:82 +0x23c
+todo/controllers.parseURL.func1({0x104676360, 0x140001921c0}, 0x1400009c200)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:67 +0xc0
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104676360?, 0x140001921c0?}, 0x10413e730?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104676360, 0x140001921c0}, 0x1400009c200)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140000955c0?}, {0x104676360, 0x140001921c0}, 0x1400009c200)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001375e0, {0x1046765b8, 0x1400011d620})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/23 23:06:46 server.go:3197: http: panic serving [::1]:49548: open views/todo_edit.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x10462b4e0, 0x1400027ee40})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/controllers.generateHTML({0x104676360?, 0x140002760e0}, {0x10465b9c0, 0x1400021ec00}, {0x140001ad790?, 0x3, 0x1400005f818?})
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:19 +0xd0
+todo/controllers.edit({0x104676360, 0x140002760e0}, 0x7?, 0x1041e853c?)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/route_main.go:82 +0x23c
+todo/controllers.parseURL.func1({0x104676360, 0x140002760e0}, 0x14000182200)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:67 +0xc0
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104676360?, 0x140002760e0?}, 0x10413e730?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104676360, 0x140002760e0}, 0x14000182200)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400011dd70?}, {0x104676360, 0x140002760e0}, 0x14000182200)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000137680, {0x1046765b8, 0x1400011d620})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/23 23:06:46 server.go:3197: http: panic serving [::1]:49549: open views/todo_edit.html: no such file or directory
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x10462b4e0, 0x1400027f800})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/controllers.generateHTML({0x104676360?, 0x140002761c0}, {0x10465b9c0, 0x1400021f280}, {0x140001ad790?, 0x3, 0x1400005f818?})
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:19 +0xd0
+todo/controllers.edit({0x104676360, 0x140002761c0}, 0x7?, 0x1041e853c?)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/route_main.go:82 +0x23c
+todo/controllers.parseURL.func1({0x104676360, 0x140002761c0}, 0x14000236300)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:67 +0xc0
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104676360?, 0x140002761c0?}, 0x10413e730?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104676360, 0x140002761c0}, 0x14000236300)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400027ef60?}, {0x104676360, 0x140002761c0}, 0x14000236300)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400023a1e0, {0x1046765b8, 0x1400011d620})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/23 23:06:51 server.go:3197: http: panic serving [::1]:49550: open views/todo_edit.html: no such file or directory
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x10462b4e0, 0x140001b0c90})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/controllers.generateHTML({0x104676360?, 0x140001922a0}, {0x10465b9c0, 0x14000191280}, {0x140001af790?, 0x3, 0x1400005b818?})
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:19 +0xd0
+todo/controllers.edit({0x104676360, 0x140001922a0}, 0x7?, 0x1041e853c?)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/route_main.go:82 +0x23c
+todo/controllers.parseURL.func1({0x104676360, 0x140001922a0}, 0x14000182400)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:67 +0xc0
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104676360?, 0x140001922a0?}, 0x10413e730?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104676360, 0x140001922a0}, 0x14000182400)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140001b03f0?}, {0x104676360, 0x140001922a0}, 0x14000182400)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400023a280, {0x1046765b8, 0x1400011d620})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/23 23:06:51 server.go:3197: http: panic serving [::1]:49551: open views/todo_edit.html: no such file or directory
+goroutine 64 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x10462b4e0, 0x1400027fb90})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/controllers.generateHTML({0x104676360?, 0x14000192380}, {0x10465b9c0, 0x14000191800}, {0x140001af790?, 0x3, 0x1400005f818?})
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:19 +0xd0
+todo/controllers.edit({0x104676360, 0x14000192380}, 0x7?, 0x1041e853c?)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/route_main.go:82 +0x23c
+todo/controllers.parseURL.func1({0x104676360, 0x14000192380}, 0x14000236400)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:67 +0xc0
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104676360?, 0x14000192380?}, 0x10413e730?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104676360, 0x14000192380}, 0x14000236400)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400027f920?}, {0x104676360, 0x14000192380}, 0x14000236400)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400023a320, {0x1046765b8, 0x1400011d620})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
+2022/12/23 23:06:51 server.go:3197: http: panic serving [::1]:49552: open views/todo_edit.html: no such file or directory
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1825 +0xb0
+panic({0x10462b4e0, 0x140001b1b90})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/html/template/template.go:374
+todo/controllers.generateHTML({0x104676360?, 0x14000192460}, {0x10465b9c0, 0x14000191c80}, {0x140001a9790?, 0x3, 0x1400026c818?})
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:19 +0xd0
+todo/controllers.edit({0x104676360, 0x14000192460}, 0x7?, 0x1041e853c?)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/route_main.go:82 +0x23c
+todo/controllers.parseURL.func1({0x104676360, 0x14000192460}, 0x14000236500)
+	/Users/toyohide/Desktop/hideyuki/golang_udemy_todo/controllers/server.go:67 +0xc0
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x104676360?, 0x14000192460?}, 0x10413e730?)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104676360, 0x14000192460}, 0x14000236500)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400027fc50?}, {0x104676360, 0x14000192460}, 0x14000236500)
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400023a3c0, {0x1046765b8, 0x1400011d620})
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go/1.18.3/libexec/src/net/http/server.go:3071 +0x450
